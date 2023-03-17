@@ -25,7 +25,7 @@ const UserList = () => {
     useEffect(() => {
       const getUsers = async () => {
         try {
-          const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/users");
+          const res = await axios.get("https://ecommerce-two-ruddy.vercel.app/api/users");
           setUsers(res.data);
         } catch (err) {}
       };
@@ -34,7 +34,7 @@ const UserList = () => {
 
     const deleteUser = (event)=>{
       let Id = event.target.id;
-      fetch(`https://vercel.com/ayaz779/ecommerce/api/users/${Id}`, {
+      fetch(`https://ecommerce-two-ruddy.vercel.app/api/users/${Id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

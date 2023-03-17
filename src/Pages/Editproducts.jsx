@@ -77,7 +77,7 @@ const Editproducts = () => {
     var id1 = (url.slice(url.indexOf("?")+1));
     const handleupdate = (e)=>{
         e.preventDefault();
-        fetch(`https://vercel.com/ayaz779/ecommerce/api/products/${id1}`, {
+        fetch(`https://ecommerce-two-ruddy.vercel.app/api/products/${id1}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

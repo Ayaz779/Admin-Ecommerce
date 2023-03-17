@@ -84,7 +84,7 @@ const Addproducts = () => {
   let navigate = useNavigate();
   const handlesignup = (e) => {
     e.preventDefault();
-    fetch("https://vercel.com/ayaz779/ecommerce/api/products", {
+    fetch("https://ecommerce-two-ruddy.vercel.app/api/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

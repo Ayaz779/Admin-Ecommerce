@@ -21,7 +21,7 @@ const ProductList = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/products");
+        const res = await axios.get("https://ecommerce-two-ruddy.vercel.app/api/products");
         setProducts(res.data);
       } catch (err) {}
     };
@@ -30,7 +30,7 @@ const ProductList = () => {
 
   const deleteProduct = (event) => {
     let Id = event.target.id;
-    fetch(`https://vercel.com/ayaz779/ecommerce/api/products/${Id}`, {
+    fetch(`https://ecommerce-two-ruddy.vercel.app/api/products/${Id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
