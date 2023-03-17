@@ -21,7 +21,7 @@ const Payment = () => {
     useEffect(() => {
       const getnews = async () => {
         try {
-          const res = await axios.get("http://localhost:4000/api/payments");
+          const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/payments");
           setnews(res.data);
         } catch (err) {}
       };
@@ -30,7 +30,7 @@ const Payment = () => {
   
     const delete_news = (event) => {
       let Id = event.target.id;
-      fetch(`http://localhost:4000/api/payments/${Id}`, {
+      fetch(`https://vercel.com/ayaz779/ecommerce/api/payments/${Id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

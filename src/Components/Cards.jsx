@@ -21,7 +21,7 @@ const Cards = () => {
     useEffect(() => {
       const getProducts = async () => {
         try {
-          const res = await axios.get("http://localhost:4000/api/products");
+          const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/products");
           setProducts(res.data);
         } catch (err) {}
       };
@@ -31,7 +31,7 @@ const Cards = () => {
     useEffect(() => {
         const getUsers = async () => {
           try {
-            const res = await axios.get("http://localhost:4000/api/users");
+            const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/users");
             setUsers(res.data);
           } catch (err) {}
         };
@@ -41,7 +41,7 @@ const Cards = () => {
       useEffect(() => {
         const getNews = async () => {
           try {
-            const res = await axios.get("http://localhost:4000/api/news");
+            const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/news");
             setNews(res.data);
           } catch (err) {}
         };
@@ -51,7 +51,7 @@ const Cards = () => {
       useEffect(() => {
         const getPayments = async () => {
           try {
-            const res = await axios.get("http://localhost:4000/api/payments");
+            const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/payments");
             setPayments(res.data);
           } catch (err) {}
         };

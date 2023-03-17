@@ -21,7 +21,7 @@ const ProductList = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/products");
+        const res = await axios.get("https://vercel.com/ayaz779/ecommerce/api/products");
         setProducts(res.data);
       } catch (err) {}
     };
@@ -30,7 +30,7 @@ const ProductList = () => {
 
   const deleteProduct = (event) => {
     let Id = event.target.id;
-    fetch(`http://localhost:4000/api/products/${Id}`, {
+    fetch(`https://vercel.com/ayaz779/ecommerce/api/products/${Id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

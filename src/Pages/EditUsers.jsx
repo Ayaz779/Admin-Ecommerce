@@ -70,7 +70,7 @@ const EditUsers = () => {
     var id1 = (url.slice(url.indexOf("?")+1));
     const handleupdate = (e)=>{
         e.preventDefault();
-        fetch(`http://localhost:4000/api/users/${id1}`, {
+        fetch(`https://vercel.com/ayaz779/ecommerce/api/users/${id1}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
